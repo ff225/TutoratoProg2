@@ -9,10 +9,19 @@ int clamp(int x, int lo, int hi) {
      * 1. x è minore del limite inferiore? Se sì, ritorna 'lo'.
      * 2. Se no, x è maggiore del limite superiore? Se sì, ritorna 'hi'.
      * 3. Altrimenti, ritorna 'x'.
-     * * NOTA DIDATTICA: Abbiamo usato molte parentesi per rendere
+     * * NOTA: Abbiamo usato molte parentesi per rendere
      * evidente l'ordine delle operazioni.
      */
     return (x < lo) ? lo : ((x > hi) ? hi : x);
+
+    /* Versione alternativa usando if-else */
+    // if (x < lo) {
+    //     return lo;
+    // } else if (x > hi) {
+    //     return hi;
+    // } else {
+    //     return x;
+    // }
 }
 
 int main(void) {

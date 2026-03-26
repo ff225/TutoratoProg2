@@ -12,6 +12,10 @@ uint32_t safe_shl(uint32_t x, unsigned s) {
         return 0u; // Se shiftiamo oltre i 32 bit, restituiamo 0 per sicurezza
     }
     return x << s;
+
+    // Versione compatta usando l'operatore ternario:
+    //return s>=32 ? 0u : x << s; // Se s è 32 o più, restituiamo 0, altrimenti facciamo lo shift
+    
 }
 
 int main(void) {

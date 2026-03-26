@@ -16,7 +16,7 @@ long long subtract_safe(unsigned a, unsigned b){
      * sia il segno meno (signed). Il long long è perfetto.
      * Dobbiamo fare il casting PRIMA della sottrazione!
      */
-    return (long long)a - (long long)b;
+    return (long long)a - b;
 }
 
 int main(void){
