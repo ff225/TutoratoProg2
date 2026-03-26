@@ -14,5 +14,3 @@ esercizio_3_array:
 
 clean:
 	rm -f esercizio_operatori_soluzione esercizio_1_max2_soluzione esercizio_2_divmod_soluzione esercizio_3_array_soluzione
-
-.PHONY: all clean
